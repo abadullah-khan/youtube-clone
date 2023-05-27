@@ -9,10 +9,10 @@ import "./styles/App.css";
 const App = () => {
   return (
     <div className="app">
-      <BrowserRouter>
+      <BrowserRouter basename="/youtube-clone">
         <Context>
           <Routes>
-            <Route path={"/"} element={<Home />} />
+            <Route path={"/youtube-clone"} element={<Home />} />
             <Route path={"/videoPlayer/:post"} element={<VideoPlayer />} />
           </Routes>
         </Context>

@@ -13,7 +13,7 @@ This is a Youtube Clone app built using React and TypeScript created for an inte
 ## Installation
 
 1. clone the repository:
-   https://github.com/abadullah-khan/youtube-clone.git
+   youtube-clone
 
 2. Navigate to the project directory:
    cd youtube-clone
