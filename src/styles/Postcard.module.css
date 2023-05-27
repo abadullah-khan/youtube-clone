@@ -1,0 +1,101 @@
+.cardWrapper {
+  border: 1px solid sandybrown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.imgContainer {
+  border: 1px coral;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 26rem;
+  width: 16rem;
+}
+.image {
+  height: 100%;
+  width: 100%;
+}
+.iconContainer {
+  position: absolute;
+  top: 50%;
+}
+.detailsWrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  background-color: rgba(81, 28, 131, 0.452);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.cardWrapper:hover .detailsWrapper,
+.cardWrapper:focus .detailsWrapper {
+  opacity: 1;
+}
+.userImage {
+  align-self: flex-end;
+  margin-right: 2px;
+  display: flex;
+  justify-content: center;
+}
+.userImage img {
+  height: 6rem;
+  width: 6rem;
+}
+.userDetails {
+  display: flex;
+  flex-direction: column;
+}
+.userDetails h3 {
+  color: rgb(231, 148, 148);
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: 0;
+}
+.userDetails p {
+  color: rgb(201, 131, 131);
+  margin: 1px 0;
+}
+.userDetails span {
+  align-self: flex-end;
+  color: rgb(179, 73, 11);
+}
+@media (max-width: 275px) {
+  .imgContainer {
+    height: 20rem;
+    width: 12rem;
+  }
+  .userImage img {
+    height: 4rem;
+    width: 4rem;
+  }
+  .userDetails h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .userDetails p,
+  .userDetails span {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 220px) {
+  .imgContainer {
+    height: 14rem;
+    width: 9rem;
+  }
+  .userImage img {
+    height: 3rem;
+    width: 3rem;
+  }
+  .userDetails h3 {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+  .userDetails p,
+  .userDetails span {
+    margin: 0;
+    font-size: 0.55rem;
+  }
+}

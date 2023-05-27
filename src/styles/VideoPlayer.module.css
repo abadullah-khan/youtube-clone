@@ -1,0 +1,150 @@
+.videoPlayerPage {
+  position: relative;
+}
+.videoPlayerPage button {
+  position: fixed;
+  top: 25%;
+  right: 0;
+}
+.videoPlayerPage button a {
+  color: blue;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.container {
+  border: 2px solid sandybrown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  width: 65vw;
+  gap: 0.5rem;
+}
+.mediaContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 37rem;
+}
+.mediaContainer video {
+  border: 1px solid sandybrown;
+  display: block;
+  height: 100%;
+}
+.detailsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: aliceblue;
+}
+.detailsWrapper div {
+  display: flex;
+  justify-content: space-around;
+}
+.detailsWrapper h2 {
+  color: wheat;
+}
+.detailsWrapper div p {
+  margin: 2px 0;
+  width: 100%;
+  text-align: left;
+}
+.detailsWrapper p span {
+  font-size: 1.3rem;
+  color: wheat;
+}
+.detailsWrapper p a {
+  color: wheat;
+}
+.channelDetailsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-;
+  border: 1px solid violet;
+  height: 7rem;
+}
+.imgContainer img {
+  height: 100%;
+  display: block;
+}
+.channelDetails {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1100px) {
+  .container {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 885px) {
+  .container {
+    width: auto;
+    border: none;
+  }
+}
+@media (max-width: 770px) {
+  .detailsWrapper {
+    text-align: center;
+  }
+  .detailsWrapper div p {
+    text-align: center;
+  }
+  .channelDetailsWrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 685px) {
+  .container {
+    flex-direction: column;
+    width: 85vw;
+    border: 2px solid sandybrown;
+  }
+}
+@media (max-width: 350px) {
+  .container {
+    border: none;
+  }
+  .mediaContainer {
+    height: 30rem;
+  }
+  .detailsWrapper div {
+    flex-direction: column;
+  }
+}
+@media (max-width: 280px) {
+  .videoPlayerPage button {
+    top: 15%;
+  }
+  .videoPlayerPage button a {
+    font-size: 0.9rem;
+  }
+  .mediaContainer {
+    height: 25rem;
+  }
+  .detailsWrapper p,
+  .detailsWrapper p span {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 240px) {
+  .mediaContainer {
+    height: 20rem;
+  }
+  .detailsWrapper p,
+  .detailsWrapper p span {
+    font-size: 0.9rem;
+  }
+  .imgContainer {
+    height: 5rem;
+  }
+}

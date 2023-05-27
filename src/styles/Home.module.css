@@ -1,0 +1,15 @@
+.homePage {
+  margin: 1rem;
+  padding: 1.3rem;
+  border: 2px solid sandybrown;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.5rem;
+}
+@media (max-width: 300px) {
+  .homePage {
+    border: none;
+  }
+}
